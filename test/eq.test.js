@@ -72,4 +72,9 @@ describe("eq()", () => {
     it("should return false when inputs aren't the same", () => {
         expect(eq("bean", "yes")).to.equal(false);
     });
+    it("should work with decimal values", () => {
+        expect(eq(3.835452, 3.835452)).to.equal(true);
+        expect(eq(3.835452, 3.83)).to.equal(false);
+        expect(eq(3.00, 3)).to.equal(true);
+    });
 });

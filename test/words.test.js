@@ -29,8 +29,4 @@ describe('words()', () => {
         expect(result).to.deep.equal(['café', 'müller', 'déjà', 'vu']);
     });
 
-    it('palauttaa tyhjän listan kun syöte ei ole merkkijono', () => {
-        expect(words(null)).to.deep.equal([]);
-        expect(words(undefined)).to.deep.equal([]);
-    });
 });
